@@ -43,12 +43,12 @@ mkdir twrp; cd twrp
 
 ## Init repo
 ```
-repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
+repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1
 ```
 
 ## Clone repo
 ```
-git clone https://github.com/HynixMS/android_device_samsung_a10s -b android-11 device/samsung/a10s
+git clone https://github.com/HynixMS/android_device_samsung_a10s -b android-12.1 device/samsung/a10s
 ```
 ## Sync recovery repo
 ```
