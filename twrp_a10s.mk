@@ -19,13 +19,15 @@ DEVICE_PATH := device/samsung/a10s
 PRODUCT_RELEASE_NAME := a10s
 
 # Inherit from common AOSP config
-$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 
 # Inherit some common TWRP stuff.
+# For PitchBlack use vendor/pb/config/common.mk
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit device configuration
-$(call inherit-product, $(DEVICE_PATH)/device.mk)
+$(call inherit-product, device/samsung/a10s/device.mk)
 
 # Charger
 PRODUCT_PACKAGES += \
